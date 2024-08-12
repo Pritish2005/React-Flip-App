@@ -23,6 +23,7 @@ const Login = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-slate-800 text-white">
     <Link className=' fixed top-0 left-0 bg-slate-700 rounded-md m-5 p-1 hover:bg-slate-500' to='/'>Back</Link>
+    <p className=' fixed top-0 right-0 bg-slate-700 rounded-md m-5 p-1'>(Username: admin & password:admin)</p>
       <form className="bg-slate-700 p-8 rounded-lg" onSubmit={handleSubmit}>
         <h1 className="text-2xl mb-6">Admin Login</h1>
         <input
