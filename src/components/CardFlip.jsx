@@ -25,7 +25,7 @@ const CardFlip = ({ item }) => {
         onAnimationComplete={() => setIsAnimating(false)}
       >
         <div
-          className="flip-card-front w-[100%] h-[100%] bg-cover border-[1px] text-gray-600 rounded-lg p-4"
+          className="flip-card-front w-[100%] h-[100%] bg-cover border-[1px] text-gray-700 rounded-lg p-4"
           style={{ backgroundImage: `url(${item.frontImage})` }}
         >
           <h1 className="text-2xl font-bold">{item.frontTitle}</h1>
@@ -33,7 +33,7 @@ const CardFlip = ({ item }) => {
         </div>
 
         <div
-          className="flip-card-back w-[100%] h-[100%] bg-cover border-[1px] text-gray-600 rounded-lg p-4"
+          className="flip-card-back w-[100%] h-[100%] bg-cover border-[1px] text-gray-700 rounded-lg p-4"
           style={{ backgroundImage: `url(${item.backImage})` }}
         >
           <h1 className="text-2xl font-bold">{item.backTitle}</h1>
