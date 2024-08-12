@@ -3,19 +3,21 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Home from './pages/Home'
+import Dashboard from './pages/Dashboard'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
    <>
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<Home />} />
+      <Route path="/dashboard" element={<Dashboard/>} />
     </Routes>
     </BrowserRouter>
    </>
   )
 }
 
-export default App
+export default App;
